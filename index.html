@@ -4,9 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub MCP Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #24292e;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        
+        h2 {
+            color: #0366d6;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .feature-card {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        footer {
+            background-color: #24292e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to GitHub MCP Feature Branch Demo</h1>
-    <p>This is a demonstration of GitHub MCP integration with Cursor.</p>
+    <header>
+        <h1>Welcome to GitHub MCP Feature Branch Demo</h1>
+        <p>A modern demonstration of GitHub MCP integration with Cursor</p>
+    </header>
+    
+    <div class="container">
+        <section>
+            <h2>About This Project</h2>
+            <p>This is a demonstration of GitHub MCP integration with Cursor. The project showcases how to create repositories, branches, and pull requests using GitHub's API.</p>
+            <p>This enhanced version includes responsive design and modern styling to improve user experience.</p>
+        </section>
+        
+        <section>
+            <h2>Key Features</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Repository Management</h3>
+                    <p>Create and manage GitHub repositories directly from Cursor.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Branch Operations</h3>
+                    <p>Create branches, switch between them, and manage code changes efficiently.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Pull Request Workflow</h3>
+                    <p>Create pull requests, add comments, and manage the review process.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 GitHub MCP Demo. Created with GitHub MCP and Cursor.</p>
+    </footer>
 </body>
 </html>
